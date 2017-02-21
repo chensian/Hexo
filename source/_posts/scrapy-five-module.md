@@ -1,10 +1,8 @@
 ---
-title: git-ssh
-date: 2017-02-21 18:27:11
+title: Scrapy五大组件介绍
+date: 2016-02-21 18:27:11
 tags:
 ---
-
-## Scrapy五大组件介绍
 
 Scrapy框架主要由五大组件组成，它们分别是调度器(Scheduler)、下载器(Downloader)、爬虫（Spider）和实体管道(Item Pipeline)、Scrapy引擎(Scrapy Engine)。下面我们分别介绍各个组件的作用。
 
@@ -24,6 +22,8 @@ Scrapy框架主要由五大组件组成，它们分别是调度器(Scheduler)、
 Scrapy引擎是整个框架的核心。它用来控制调试器、下载器、爬虫。实际上，引擎相当于计算机的CPU,它控制着整个流程。
 
 ## Scrapy运行流程
+
+![](http://ww1.sinaimg.cn/large/005LZfaWgy1fcyi9y62cxj30jg0dqmzl)
 
 1. 首先，引擎从调度器中取出一个链接(URL)用于接下来的抓取
 1. 引擎把URL封装成一个请求(Request)传给下载器，下载器把资源下载下来，并封装成应答包(Response)
